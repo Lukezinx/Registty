@@ -1,0 +1,39 @@
+import { createBrowserRouter,RouterProvider } from "react-router-dom"
+import Root from "./pages/Root"
+import HomePage from "./pages/HomePage"
+import SearchPage from "./pages/search/SearchPage"
+import DetailsPage from "./pages/datails/DetailsPage"
+import { searchLoader } from "./pages/search/searchLoader"
+import { detailsLoader } from "./pages/datails/detaislLoader"
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root/>,
+    children: [
+      {
+        index: true,
+        element: <HomePage/> 
+      },
+      {
+        path: "/search",
+        element: <SearchPage/>,
+        loader: searchLoader,
+      },
+      {
+        path: "/packages/:name",
+        element: <DetailsPage/>,
+        loader: detailsLoader
+      },
+
+    ]
+  }
+])
+
+
+function App() {
+  return <RouterProvider router={router}/>
+}
+
+export default App
