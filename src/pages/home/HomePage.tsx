@@ -11,7 +11,7 @@ export default function HomePage() {
                     {p.name}
                 </div>
                 <div className="text-sm text-gray-500">
-                    {p.descripton}
+                    {p.description}
                 </div>
 
                 <div className="text-sm text-gray-500">

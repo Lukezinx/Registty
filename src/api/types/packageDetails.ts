@@ -1,6 +1,6 @@
 export interface PackageDetails {
     name: string;
-    descripton: string;
+    description: string;
     readme: string;
     author: {
         email: string;
@@ -9,6 +9,6 @@ export interface PackageDetails {
     maintainers: {
         email: string;
         name: string;
-    }
+    }[]
     license: string;
 }

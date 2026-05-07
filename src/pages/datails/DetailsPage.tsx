@@ -13,7 +13,7 @@ export default function DetailsPage() {
                     Description 
                 </h3>
                 <div className="p-3 bg-gray-200 roundeds">
-                    {details.descripton}
+                    {details.description}
                 </div>
             </div>
 
