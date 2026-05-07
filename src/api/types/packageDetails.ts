@@ -6,7 +6,7 @@ export interface PackageDetails {
         email: string;
         name: string
     }
-    mainstainers: {
+    maintainers: {
         email: string;
         name: string;
     }
