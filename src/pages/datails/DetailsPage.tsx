@@ -12,7 +12,7 @@ export default function DetailsPage() {
                 <h3 className="text-lg font-bold">
                     Description 
                 </h3>
-                <div className="p-3 bg-gray-200 roundeds">
+                <div className="p-3 bg-gray-200 rounded">
                     {details.description}
                 </div>
             </div>
@@ -21,7 +21,7 @@ export default function DetailsPage() {
                 <h3 className="text-lg font-bold">
                     License 
                 </h3>
-                <div className="p-3 bg-gray-200 roundeds">
+                <div className="p-3 bg-gray-200 rounded">
                     {details.license}
                 </div>
             </div>
@@ -30,7 +30,7 @@ export default function DetailsPage() {
                 <h3 className="text-lg font-bold">
                     Author 
                 </h3>
-                <div className="p-3 bg-gray-200 roundeds">
+                <div className="p-3 bg-gray-200 rounded">
                     {details.author?.name}
                 </div>
             </div>

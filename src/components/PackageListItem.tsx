@@ -7,8 +7,8 @@ interface PackageListItemProps {
 
 export default function PackageListItem({ pack }: PackageListItemProps) {
 
-    const renderKeywords = (pack.keywords || []).map((keywords) => {
-        return <div key={keywords} className="border py-0.5 px-1 text-xs bg-slate-200 rounded ">
+    const renderKeywords = (pack.keywords || []).map((keywords,index) => {
+        return <div key={`${keywords}-${index}`} className="border py-0.5 px-1 text-xs bg-slate-200 rounded ">
             {keywords}
         </div>
     })
